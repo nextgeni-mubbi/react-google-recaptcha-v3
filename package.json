@@ -12,12 +12,12 @@
     "build-example": "webpack --config webpack.config.js",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
-  "author": "Duong Tran",
-  "homepage": "https://github.com/t49tran/react-google-recaptcha-v3",
+  "author": "Duong Tran and forked Mubbi",
+  "homepage": "https://github.com/nextgeni-mubbi/react-google-recaptcha-v3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/t49tran/react-google-recaptcha-v3"
+    "url": "https://github.com/nextgeni-mubbi/react-google-recaptcha-v3"
   },
   "peerDependencies": {
     "react": "^16.3 || ^17.0 || ^18.0",
