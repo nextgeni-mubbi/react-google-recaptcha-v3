@@ -113,7 +113,8 @@ export const cleanGoogleRecaptcha = (scriptId: string, container?: HTMLElement |
 
   // remove old config from window
   /* eslint-disable @typescript-eslint/no-explicit-any */
-  (window as any).___grecaptcha_cfg = undefined;
+  //(window as any).___grecaptcha_cfg = undefined;
+  console.log('testing clean window prevent mubbi');
 
   // remove script
   const script = document.querySelector(`#${scriptId}`);
