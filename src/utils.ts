@@ -108,13 +108,10 @@ export const cleanBadge = (container?: HTMLElement | string) => {
  * @param container
  */
 export const cleanGoogleRecaptcha = (scriptId: string, container?: HTMLElement | string) => {
-  // remove badge
-  cleanBadge(container);
-
   // remove old config from window
   /* eslint-disable @typescript-eslint/no-explicit-any */
-  //(window as any).___grecaptcha_cfg = undefined;
-  console.log('testing clean window prevent mubbi');
+  (window as any).___grecaptcha_cfg = undefined;
+  console.log('testing clean window prevent mubbi updated');
 
   // remove script
   const script = document.querySelector(`#${scriptId}`);
@@ -123,6 +120,9 @@ export const cleanGoogleRecaptcha = (scriptId: string, container?: HTMLElement |
   }
 
   cleanGstaticRecaptchaScript();
+
+  // remove badge
+  cleanBadge(container);
 };
 
 /**
